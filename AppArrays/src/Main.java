@@ -29,6 +29,6 @@ public class Main {
         //System.out.println(config[1][1]);
         System.out.println(config[XPROD][CPASS]); //...
 
-
+        String user = config[XPROD][CUSER];
     }
 }
