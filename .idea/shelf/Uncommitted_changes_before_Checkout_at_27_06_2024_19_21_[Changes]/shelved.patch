@@ -1,0 +1,32 @@
+Index: AppArrays/src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Main {\r\n    public static void main(String[] args) {\r\n\r\n        String configTest[] = {\"123.123.42.12\", \"jkbe\", \"21231\"};\r\n        String configProd[] = {\"www.google.com\", \"jkbenites\", \"alalals\"};\r\n        String configDesa[] = {\"123.123.42.10\", \"userdesa02\", \"1234\"};\r\n\r\n        int XPROD = 2;\r\n        int XTEST = 1;\r\n        int XDESA = 0;\r\n        int CSERV = 0;\r\n        int CUSER = 1;\r\n        int CPASS = 2;\r\n        int CAMB = 3;\r\n\r\n        String config[][] = {\r\n                {\"123.123.42.10\", \"userdesa02\", \"1234\", \"DESA\", \"otro campo\"},   //0\r\n                {\"123.123.42.12\", \"jkbe\", \"21231\", \"TEST\"},        //1\r\n                {\"www.google.com\", \"jkbenites\", \"alalals\", \"PROD\"} //2\r\n        };\r\n\r\n\r\n        //Hacer doble bucle for/for\r\n\r\n\r\n        //CLAVE: DESARROLLO\r\n\r\n        //System.out.println(config[3][1]);\r\n        //System.out.println(config[1][1]);\r\n        System.out.println(config[XPROD][CPASS]); //...\r\n\r\n\r\n    }\r\n}
+===================================================================
+diff --git a/AppArrays/src/Main.java b/AppArrays/src/Main.java
+--- a/AppArrays/src/Main.java	
++++ b/AppArrays/src/Main.java	
+@@ -19,16 +19,14 @@
+                 {"www.google.com", "jkbenites", "alalals", "PROD"} //2
+         };
+ 
+-
+-        //Hacer doble bucle for/for
++        // Hacer doble bucle for/for
+ 
+-
+-        //CLAVE: DESARROLLO
++        // CLAVE: DESARROLLO
+ 
+-        //System.out.println(config[3][1]);
+-        //System.out.println(config[1][1]);
++        // System.out.println(config[3][1]);
++        // System.out.println(config[1][1]);
+         System.out.println(config[XPROD][CPASS]); //...
+ 
+-
++        String user = config[XPROD][CUSER];
+     }
+-}
+\ No newline at end of file
++}
